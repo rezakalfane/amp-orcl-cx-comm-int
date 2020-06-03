@@ -1,0 +1,2 @@
+Content:
+<span data-bind="text: contentData"></span>
