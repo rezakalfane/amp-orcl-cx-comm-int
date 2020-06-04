@@ -6,6 +6,8 @@
         "amplienceBaseURLLabel": "Amplience Base URL",
         "amplienceContentSchemaBannerHelpText": "Define the Amplience JSON Content Schema validation for Banner.",
         "amplienceContentSchemaBannerLabel": "Amplience Content Schema for Banner",
+        "amplienceContentSchemaBannerSlotHelpText": "Define the Amplience JSON Content Schema validation for Banner Slot.",
+        "amplienceContentSchemaBannerSlotLabel": "Amplience Content Schema for Banner Slot",
         "amplienceContentSchemaCardListHelpText": "Define the Amplience JSON Content Schema validation for Card List.",
         "amplienceContentSchemaCardListLabel": "Amplience Content Schema for Card List"
     }

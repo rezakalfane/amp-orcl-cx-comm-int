@@ -21,6 +21,15 @@
             "required": true
         },
         {
+            "id": "amplienceContentSchemaBannerSlot",
+            "type": "stringType",
+            "name": "stringValue",
+            "helpTextResourceId": "amplienceContentSchemaBannerSlotHelpText",
+            "labelResourceId": "amplienceContentSchemaBannerSlotLabel",
+            "defaultValue": "https://www.amplience.com/examples/bannerSlot.json",
+            "required": true
+        },
+        {
             "id": "amplienceContentSchemaCardList",
             "type": "stringType",
             "name": "stringValue",
