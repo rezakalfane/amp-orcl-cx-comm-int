@@ -4,9 +4,9 @@
         "description": "Amplience Integration with CX Commerce Global Settings",
         "amplienceBaseURLHelpText": "Define Amplience Base URL.",
         "amplienceBaseURLLabel": "Amplience Base URL",
-        "amplienceContentSchemaBannerHelpText": "Define the Amplience JSON Content Schema validation for Banner",
+        "amplienceContentSchemaBannerHelpText": "Define the Amplience JSON Content Schema validation for Banner.",
         "amplienceContentSchemaBannerLabel": "Amplience Content Schema for Banner",
-        "amplienceContentSchemaCardListHelpText": "Define the Amplience JSON Content Schema validation for Card List",
+        "amplienceContentSchemaCardListHelpText": "Define the Amplience JSON Content Schema validation for Card List.",
         "amplienceContentSchemaCardListLabel": "Amplience Content Schema for Card List"
     }
 }
