@@ -57,6 +57,7 @@ define(
 
                                 var checkContentSchema = data.content._meta.schema;
                                 console.log(checkContentSchema);
+                                console.log(contentSchema);
 
                                 if (checkContentSchema == widget.contentSchema)
                                 {
