@@ -54,6 +54,7 @@ define(
                                 console.log( "Amplience Content Data: " );
                                 console.log( data.content );
                                 
+                                // Checking if content schema is the one expected
                                 var checkContentSchema = data.content._meta.schema;
                                 console.log(checkContentSchema);
                                 console.log(widget.contentSchema);
@@ -78,6 +79,7 @@ define(
                                 }
                                 else
                                 {
+                                    // Wrong content schema
                                     console.log("Wrong schema " + checkContentSchema + ", was expecting " + widget.contentSchema);
                                 }
                             }

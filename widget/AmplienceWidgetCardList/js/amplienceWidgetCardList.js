@@ -55,6 +55,7 @@ define(
                                 console.log("Amplience Content Data: ");
                                 console.log(data.content);
 
+                                // Checking if content schema is the one expected
                                 var checkContentSchema = data.content._meta.schema;
                                 console.log(checkContentSchema);
                                 console.log(contentSchema);
@@ -63,7 +64,7 @@ define(
                                 {
                                     var listURLs = [];
                                     
-                                    // Cycle through cards
+                                    // Cycle through cards and building list of image URLs
                                     for ( var cardRef in data.content.cards )
                                     {
                                         var card = data.content.cards[cardRef];
@@ -78,9 +79,13 @@ define(
                                         );
                                     }
                                     
-                                    widget.amplienceCardListClass("amp-ca-card-list amp-ca-prod-" + listURLs.length + "-rows");
+                                    // Saving list of image URLs
                                     widget.amplienceCardImageURLs(listURLs);
                                     
+                                    // Assigning the right class
+                                    if ( listURLs < 6 )
+                                        widget.amplienceCardListClass("amp-ca-card-list amp-ca-prod-" + listURLs.length + "-rows");
+
                                     // Retrieve content
                                     widget.content(data.content); 
 
@@ -88,6 +93,7 @@ define(
                                 }
                                 else
                                 {
+                                    // Wrong content schema
                                     console.log("Wrong schema " + checkContentSchema + ", was expecting " + widget.contentSchema);
                                 }
                             }
