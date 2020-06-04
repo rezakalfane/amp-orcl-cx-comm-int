@@ -4,6 +4,8 @@
         "booleanLabel": "Boolean",
         "stringHelpText": "Define a string value.",
         "stringLabel": "String",
+        "amplienceBaseURLHelpText": "Define Amplience Base URL.",
+        "amplienceBaseURLLabel": "Amplience Base URL",
         "optionHelpText": "Select the option size.",
         "optionLabel": "Option Picker",
         "sizeSmallLabel": "Small",
@@ -15,7 +17,7 @@
         "collectionPickerValueLabel2": "Collection Picker 2 Value (No Limit)",
         "mediaPickerValueHelpText": "Media Picker Help Text",
         "mediaPickerValueLabel": "Media Picker Value",
-        "title": "Site Settings Examples",
-        "description": "Site Settings Examples Description"
+        "title": "Amplience Global Settings",
+        "description": "Amplience Integration with CX Commerce Global Settings"
     }
 }

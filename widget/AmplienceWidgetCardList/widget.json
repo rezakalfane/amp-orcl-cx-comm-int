@@ -1,0 +1,16 @@
+{
+    "config": {
+        "amplienceContentID": "",
+        "amplienceContentKey": ""
+    },
+    "javascript": "amplienceWidgetCardList",
+    "jsEditable": true,
+    "availableToAllPages": true,
+    "translations": [
+        {
+            "language": "en",
+            "name": "Amplience Widget - Card List"
+        }
+    ],
+    "version": 1
+}

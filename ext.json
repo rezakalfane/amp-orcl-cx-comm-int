@@ -2,8 +2,8 @@
     "extensionID": "7acbae39-811f-4e87-8cd3-915294695a20",
     "developerID": "rkalfane",
     "createdBy": "Reza Kalfane",
-    "name": "AmplienceExtension",
-    "version": 1,
+    "name": "Amplience Integration",
+    "version": 2,
     "timeCreated": "2020-06-03",
-    "description": "Amplience Integration"
+    "description": "Amplience Integration with CX Commerce"
 }

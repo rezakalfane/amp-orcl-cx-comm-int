@@ -22,6 +22,15 @@
             "required": true
         },
         {
+            "id": "amplienceBaseURL",
+            "type": "stringType",
+            "name": "stringValue",
+            "helpTextResourceId": "amplienceBaseURLHelpText",
+            "labelResourceId": "amplienceBaseURLLabel",
+            "defaultValue": "https://oraclecx.cdn.content.amplience.net/content",
+            "required": true
+        },
+        {
             "id": "optionItem",
             "type": "optionType",
             "name": "optionValue",

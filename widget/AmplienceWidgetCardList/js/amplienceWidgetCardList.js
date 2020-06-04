@@ -1,6 +1,6 @@
 define(
     //-------------------------------------------------------------------
-    // AMPLIENCE WIDGET - BANNER
+    // AMPLIENCE WIDGET - CARD LIST
     //-------------------------------------------------------------------
 
     //-------------------------------------------------------------------
@@ -40,7 +40,7 @@ define(
                 if ( widget.amplienceContentURL )
                 {
                     // Load data
-                    $.getJSON(widget.amplienceContentURL) 
+                    $.getJSON(widget.amplienceContentURL, {"depth": "all", "format": "inline"}) 
                         .success(
                             function(data) { 
                                 
