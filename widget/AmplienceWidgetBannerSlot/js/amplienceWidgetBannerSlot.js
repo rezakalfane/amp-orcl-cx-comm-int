@@ -1,6 +1,6 @@
 define(
     //-------------------------------------------------------------------
-    // AMPLIENCE WIDGET - BANNER
+    // AMPLIENCE WIDGET - BANNER SLOT
     //-------------------------------------------------------------------
 
     //-------------------------------------------------------------------
@@ -16,7 +16,7 @@ define(
         "use strict";
 
         return {
-            contentSchema: "https://www.amplience.com/examples/banner.json",
+            contentSchema: "https://www.amplience.com/examples/bannerSlot.json",
             content: ko.observable(),
             isLoading: ko.observable(true),
             imageURL: ko.observable(),
@@ -27,8 +27,8 @@ define(
 
                 // Getting Amplience Settings from Site Settings
                 widget.amplienceBaseURL = widget.site().extensionSiteSettings['amplience-site-settings']['amplienceBaseURL'];
-                if (widget.site().extensionSiteSettings['amplience-site-settings']['amplienceContentSchemaBanner'])
-                    widget.contentSchema = widget.site().extensionSiteSettings['amplience-site-settings']['amplienceContentSchemaBanner'];
+                if (widget.site().extensionSiteSettings['amplience-site-settings']['amplienceContentSchemaBannerSlot'])
+                    widget.contentSchema = widget.site().extensionSiteSettings['amplience-site-settings']['amplienceContentSchemaBannerSlot'];
                 
                 // Building the Content URL
                 if ( widget.amplienceContentKey() )
@@ -43,7 +43,7 @@ define(
                 if ( widget.amplienceContentURL )
                 {
                     // Load data
-                    $.getJSON(widget.amplienceContentURL, {"depth": "all", "format": "inlined"}) 
+                    $.getJSON(widget.amplienceContentURL, {"depth": "all", "format": "inlined"})  
                         .success(
                             function(data) { 
                                 

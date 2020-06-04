@@ -1,0 +1,19 @@
+{
+    "widgetDescriptorName": "Amplience Widget - Banner Slot",
+    "properties": [
+        {
+            "id": "amplienceContentID",
+            "type": "stringType",
+            "name": "Amplience Content ID",
+            "helpTextResourceId": "amplienceContentIDHelpText",
+            "labelResourceId": "amplienceContentIDTextLabel"
+        },
+        {
+            "id": "amplienceContentKey",
+            "type": "stringType",
+            "name": "Amplience Content Key",
+            "helpTextResourceId": "amplienceContentKeyHelpText",
+            "labelResourceId": "amplienceContentKeyTextLabel"
+        }
+    ]
+}

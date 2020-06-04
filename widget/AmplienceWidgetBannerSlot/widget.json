@@ -1,0 +1,16 @@
+{
+    "config": {
+        "amplienceContentID": "",
+        "amplienceContentKey": ""
+    },
+    "javascript": "amplienceWidgetBannerSlot",
+    "jsEditable": true,
+    "availableToAllPages": true,
+    "translations": [
+        {
+            "language": "en",
+            "name": "Amplience Widget - Banner Slot"
+        }
+    ],
+    "version": 1
+}
