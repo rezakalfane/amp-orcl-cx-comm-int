@@ -16,7 +16,7 @@ define(
         "use strict";
 
         return {
-            contentSchema: "https://www.amplience.com/examples/bannerSlot.json",
+            contentSchema: "https://www.amplience.com/examples/slots/banner-slot.json",
             content: ko.observable(),
             isLoading: ko.observable(true),
             imageURL: ko.observable(),

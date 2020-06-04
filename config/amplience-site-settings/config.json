@@ -26,7 +26,7 @@
             "name": "stringValue",
             "helpTextResourceId": "amplienceContentSchemaBannerSlotHelpText",
             "labelResourceId": "amplienceContentSchemaBannerSlotLabel",
-            "defaultValue": "https://www.amplience.com/examples/bannerSlot.json",
+            "defaultValue": "https://www.amplience.com/examples/slots/banner-slot.json",
             "required": true
         },
         {
