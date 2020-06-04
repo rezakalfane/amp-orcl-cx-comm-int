@@ -1,23 +1,12 @@
 {
     "resources": {
-        "booleanHelpText": "Select a boolean value.",
-        "booleanLabel": "Boolean",
-        "stringHelpText": "Define a string value.",
-        "stringLabel": "String",
+        "title": "Amplience Global Settings",
+        "description": "Amplience Integration with CX Commerce Global Settings",
         "amplienceBaseURLHelpText": "Define Amplience Base URL.",
         "amplienceBaseURLLabel": "Amplience Base URL",
-        "optionHelpText": "Select the option size.",
-        "optionLabel": "Option Picker",
-        "sizeSmallLabel": "Small",
-        "sizeMediumLabel": "Medium",
-        "sizeLargeLabel": "Large",
-        "collectionPickerValueHelpText": "Collection Picker Help Text",
-        "collectionPickerValueLabel": "Collection Picker Value (Limit: 5)",
-        "collectionPickerValueHelpText2": "Collection Picker 2 Help Text",
-        "collectionPickerValueLabel2": "Collection Picker 2 Value (No Limit)",
-        "mediaPickerValueHelpText": "Media Picker Help Text",
-        "mediaPickerValueLabel": "Media Picker Value",
-        "title": "Amplience Global Settings",
-        "description": "Amplience Integration with CX Commerce Global Settings"
+        "amplienceContentSchemaBannerHelpText": "Define the Amplience JSON Content Schema validation for Banner",
+        "amplienceContentSchemaBannerLabel": "Amplience Content Schema for Banner",
+        "amplienceContentSchemaCardListHelpText": "Define the Amplience JSON Content Schema validation for Card List",
+        "amplienceContentSchemaCardListLabel": "Amplience Content Schema for Card List"
     }
 }

@@ -16,17 +16,21 @@ define(
         "use strict";
 
         return {
+            contentSchema: "https://www.amplience.com/examples/cardList.json",
             content: ko.observable(),
             isLoading: ko.observable(true),
+            amplienceCardListClass: ko.observable("amp-ca-card-list amp-ca-prod-3-rows"),
             amplienceBaseURL: null,
             amplienceContentURL: null,
             amplienceCardImageURLs: ko.observable([]),
 
             onLoad: function(widget) {
 
-                // Getting Amplience Base URL from site setting
+                // Getting Amplience Settings from Site Settings
                 widget.amplienceBaseURL = widget.site().extensionSiteSettings['amplience-site-settings']['amplienceBaseURL'];
-                
+                if (widget.site().extensionSiteSettings['amplience-site-settings']['amplienceContentSchemaCardList'])
+                    widget.contentSchema = widget.site().extensionSiteSettings['amplience-site-settings']['amplienceContentSchemaCardList'];
+
                 // Building the Content URL
                 if ( widget.amplienceContentKey() )
                     widget.amplienceContentURL = widget.amplienceBaseURL + "/key/" + widget.amplienceContentKey();
@@ -50,30 +54,41 @@ define(
                                 // Logging
                                 console.log("Amplience Content Data: ");
                                 console.log(data.content);
-                                
-                                var listURLs = [];
-                                
-                                // Cycle through cards
-                                for ( var cardRef in data.content.cards )
-                                {
-                                    var card = data.content.cards[cardRef];
-                                    console.log(card);
-                                    listURLs.push(
-                                        "https://"
-                                        + card.image.image.defaultHost
-                                        + "/i/"
-                                        + card.image.image.endpoint
-                                        + "/"
-                                        + card.image.image.name
-                                    );
-                                }
-                                
-                                widget.amplienceCardImageURLs(listURLs);
-                                
-                                // Retrieve content
-                                widget.content(data.content); 
 
-                                console.log(widget.amplienceCardImageURLs());
+                                var checkContentSchema = data.content._meta.schema;
+                                console.log(checkContentSchema);
+
+                                if (checkContentSchema == widget.contentSchema)
+                                {
+                                    var listURLs = [];
+                                    
+                                    // Cycle through cards
+                                    for ( var cardRef in data.content.cards )
+                                    {
+                                        var card = data.content.cards[cardRef];
+                                        console.log(card);
+                                        listURLs.push(
+                                            "https://"
+                                            + card.image.image.defaultHost
+                                            + "/i/"
+                                            + card.image.image.endpoint
+                                            + "/"
+                                            + card.image.image.name
+                                        );
+                                    }
+                                    
+                                    widget.amplienceCardListClass("amp-ca-card-list amp-ca-prod-" + listURLs.length + "-rows");
+                                    widget.amplienceCardImageURLs(listURLs);
+                                    
+                                    // Retrieve content
+                                    widget.content(data.content); 
+
+                                    console.log(widget.amplienceCardImageURLs());
+                                }
+                                else
+                                {
+                                    console.log("Wrong schema " + checkContentSchema + ", was expecting " + widget.contentSchema);
+                                }
                             }
                         )
                 }

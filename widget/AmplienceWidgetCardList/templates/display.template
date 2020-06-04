@@ -1,4 +1,4 @@
-<div class="amp-ca-card-list amp-ca-prod-3-rows">
+<div data-bind="attr: { class: amplienceCardListClass() }">
     <div data-bind="visible: isLoading()">
         ...
     </div>

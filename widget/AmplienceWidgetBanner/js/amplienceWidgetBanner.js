@@ -16,6 +16,7 @@ define(
         "use strict";
 
         return {
+            contentSchema: "https://www.amplience.com/examples/banner.json",
             content: ko.observable(),
             isLoading: ko.observable(true),
             imageURL: ko.observable(),
@@ -24,8 +25,10 @@ define(
 
             onLoad: function(widget) {
 
-                // Getting Amplience Base URL from site setting
+                // Getting Amplience Settings from Site Settings
                 widget.amplienceBaseURL = widget.site().extensionSiteSettings['amplience-site-settings']['amplienceBaseURL'];
+                if (widget.site().extensionSiteSettings['amplience-site-settings']['amplienceContentSchemaCardList'])
+                    widget.contentSchema = widget.site().extensionSiteSettings['amplience-site-settings']['amplienceContentSchemaCardList'];
                 
                 // Building the Content URL
                 if ( widget.amplienceContentKey() )
@@ -46,22 +49,37 @@ define(
                                 
                                 // Set loading to false
                                 widget.isLoading(false);
-                                
-                                // Retrieve content
-                                widget.content(data.content); 
-                                
+
                                 // Logging
                                 console.log( "Amplience Content Data: " );
                                 console.log( data.content );
                                 
-                                // Build banner image URL
-                                widget.imageURL(
-                                    "https://" 
-                                    + data.content.img.image.defaultHost 
-                                    + "/i/" 
-                                    + data.content.img.image.endpoint 
-                                    + "/" 
-                                    + data.content.img.image.name);
+                                var checkContentSchema = data.content._meta.schema;
+                                console.log(checkContentSchema);
+                                console.log(widget.contentSchema);
+
+                                if (checkContentSchema == widget.contentSchema)
+                                {
+
+                                    // Build banner image URL
+                                    widget.imageURL(
+                                        "https://" 
+                                        + data.content.img.image.defaultHost 
+                                        + "/i/" 
+                                        + data.content.img.image.endpoint 
+                                        + "/" 
+                                        + data.content.img.image.name);
+                                          
+                                        
+                                    console.log(widget.imageURL());
+
+                                    // Retrieve content
+                                    widget.content(data.content); 
+                                }
+                                else
+                                {
+                                    console.log("Wrong schema " + checkContentSchema + ", was expecting " + widget.contentSchema);
+                                }
                             }
                         )
                 }
