@@ -28,7 +28,7 @@ define(
                 // Getting Amplience Settings from Site Settings
                 widget.amplienceBaseURL = widget.site().extensionSiteSettings['amplience-site-settings']['amplienceBaseURL'];
                 if (widget.site().extensionSiteSettings['amplience-site-settings']['amplienceContentSchemaCardList'])
-                    widget.contentSchema = widget.site().extensionSiteSettings['amplience-site-settings']['amplienceContentSchemaCardList'];
+                    widget.contentSchema = widget.site().extensionSiteSettings['amplience-site-settings']['amplienceContentSchemaBanner'];
                 
                 // Building the Content URL
                 if ( widget.amplienceContentKey() )
