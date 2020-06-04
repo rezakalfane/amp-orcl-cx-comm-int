@@ -3,81 +3,28 @@
         ...
     </div>
     <!-- ko if: content() -->
-    <div class="amp-ca-card-title">
-    </div>
-    <div class="amp-ca-card-list-wrap">
-        <div class="amp-ca-card amp-ca-card-1">
-            <div class="amp-ca-card-wrap">
-                <div class="amp-ca-image-holder">
-                    <picture class="amp-ca-image">
-
-                        <img src="//pt78qn3of4hj1tsxvgta5xm1o.staging.bigcontent.io/i/oraclecx/mens-nanushka?w=1600&amp;upscale=false&amp;fmt.jpeg.interlaced=true"
-                            srcset="//pt78qn3of4hj1tsxvgta5xm1o.staging.bigcontent.io/i/oraclecx/mens-nanushka.webp?w=1600&amp;upscale=false&amp;fmt.jpeg.interlaced=true 1x, //pt78qn3of4hj1tsxvgta5xm1o.staging.bigcontent.io/i/oraclecx/mens-nanushka.webp?w=3200&amp;upscale=false&amp;fmt.jpeg.interlaced=true 2x,
-//pt78qn3of4hj1tsxvgta5xm1o.staging.bigcontent.io/i/oraclecx/mens-nanushka?w=1600&amp;upscale=false&amp;fmt.jpeg.interlaced=true 1x, //pt78qn3of4hj1tsxvgta5xm1o.staging.bigcontent.io/i/oraclecx/mens-nanushka?w=3200&amp;upscale=false&amp;fmt.jpeg.interlaced=true 2x"
-                            class="amp-ca-image-pic" alt="Mens Nanushka">
-                    </picture>
-                </div>
-                <div class="amp-ca-card-text-wrap">
-                    <div class="amp-ca-card-name">Menswear</div>
-                    <div class="amp-ca-card-link-container">
-                        <div class="amp-ca-card-link-holder link">
-                            <a class="amp-ca-card-link amp-ca-banner-button readMore black"
-                                href="http://www.amplience.com">
-                                Shop now
-                            </a>
+        <div class="amp-ca-card-title">
+        </div>
+        <div class="amp-ca-card-list-wrap" data-bind="foreach: content().cards">
+            <div class="amp-ca-card">
+                <div class="amp-ca-card-wrap">
+                    <div class="amp-ca-image-holder">
+                        <picture class="amp-ca-image">
+                            <img class="amp-ca-image-pic" data-bind="attr: { src: $parent.amplienceCardImageURLs()[$index()], alt: image.imageAltText }">
+                        </picture>
+                    </div>
+                    <div class="amp-ca-card-text-wrap">
+                        <div class="amp-ca-card-name" data-bind="text: cardName"></div>
+                        <div class="amp-ca-card-link-container">
+                            <div class="amp-ca-card-link-holder link">
+                                <a class="amp-ca-card-link amp-ca-banner-button readMore black"
+                                    data-bind="attr: { href: links[0].value }, text: links[0].label">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="amp-ca-card amp-ca-card-2">
-            <div class="amp-ca-card-wrap">
-                <div class="amp-ca-image-holder">
-                    <picture class="amp-ca-image">
-
-                        <img src="//pt78qn3of4hj1tsxvgta5xm1o.staging.bigcontent.io/i/oraclecx/chantaceille?w=1600&amp;upscale=false&amp;fmt.jpeg.interlaced=true"
-                            srcset="//pt78qn3of4hj1tsxvgta5xm1o.staging.bigcontent.io/i/oraclecx/chantaceille.webp?w=1600&amp;upscale=false&amp;fmt.jpeg.interlaced=true 1x, //pt78qn3of4hj1tsxvgta5xm1o.staging.bigcontent.io/i/oraclecx/chantaceille.webp?w=3200&amp;upscale=false&amp;fmt.jpeg.interlaced=true 2x,
-//pt78qn3of4hj1tsxvgta5xm1o.staging.bigcontent.io/i/oraclecx/chantaceille?w=1600&amp;upscale=false&amp;fmt.jpeg.interlaced=true 1x, //pt78qn3of4hj1tsxvgta5xm1o.staging.bigcontent.io/i/oraclecx/chantaceille?w=3200&amp;upscale=false&amp;fmt.jpeg.interlaced=true 2x"
-                            class="amp-ca-image-pic" alt="Beauty">
-                    </picture>
-                </div>
-                <div class="amp-ca-card-text-wrap">
-                    <div class="amp-ca-card-name">Beauty Accessories</div>
-                    <div class="amp-ca-card-link-container">
-                        <div class="amp-ca-card-link-holder link">
-                            <a class="amp-ca-card-link amp-ca-banner-button readMore black"
-                                href="http://www.amplience.com">
-                                Shop now
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="amp-ca-card amp-ca-card-3">
-            <div class="amp-ca-card-wrap">
-                <div class="amp-ca-image-holder">
-                    <picture class="amp-ca-image">
-                        <img src="//pt78qn3of4hj1tsxvgta5xm1o.staging.bigcontent.io/i/oraclecx/womens-knits?w=1600&amp;upscale=false&amp;fmt.jpeg.interlaced=true"
-                            srcset="//pt78qn3of4hj1tsxvgta5xm1o.staging.bigcontent.io/i/oraclecx/womens-knits.webp?w=1600&amp;upscale=false&amp;fmt.jpeg.interlaced=true 1x, //pt78qn3of4hj1tsxvgta5xm1o.staging.bigcontent.io/i/oraclecx/womens-knits.webp?w=3200&amp;upscale=false&amp;fmt.jpeg.interlaced=true 2x,
-//pt78qn3of4hj1tsxvgta5xm1o.staging.bigcontent.io/i/oraclecx/womens-knits?w=1600&amp;upscale=false&amp;fmt.jpeg.interlaced=true 1x, //pt78qn3of4hj1tsxvgta5xm1o.staging.bigcontent.io/i/oraclecx/womens-knits?w=3200&amp;upscale=false&amp;fmt.jpeg.interlaced=true 2x"
-                            class="amp-ca-image-pic" alt="Womens knit">
-                    </picture>
-                </div>
-                <div class="amp-ca-card-text-wrap">
-                    <div class="amp-ca-card-name">Womens Knitwear</div>
-                    <div class="amp-ca-card-link-container">
-                        <div class="amp-ca-card-link-holder link">
-                            <a class="amp-ca-card-link amp-ca-banner-button readMore black"
-                                href="http://www.amplience.com">
-                                Shop now
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- /ko -->
+    <!-- /ko -->
 </div>

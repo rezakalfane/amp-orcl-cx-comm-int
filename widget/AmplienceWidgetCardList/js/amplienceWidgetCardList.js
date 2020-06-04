@@ -18,9 +18,9 @@ define(
         return {
             content: ko.observable(),
             isLoading: ko.observable(true),
-            imageURL: ko.observable(),
             amplienceBaseURL: null,
             amplienceContentURL: null,
+            amplienceCardImageURLs: ko.observable([]),
 
             onLoad: function(widget) {
 
@@ -40,28 +40,40 @@ define(
                 if ( widget.amplienceContentURL )
                 {
                     // Load data
-                    $.getJSON(widget.amplienceContentURL, {"depth": "all", "format": "inline"}) 
+                    $.getJSON(widget.amplienceContentURL, {"depth": "all", "format": "inlined"}) 
                         .success(
                             function(data) { 
                                 
                                 // Set loading to false
                                 widget.isLoading(false);
                                 
+                                // Logging
+                                console.log("Amplience Content Data: ");
+                                console.log(data.content);
+                                
+                                var listURLs = [];
+                                
+                                // Cycle through cards
+                                for ( var cardRef in data.content.cards )
+                                {
+                                    var card = data.content.cards[cardRef];
+                                    console.log(card);
+                                    listURLs.push(
+                                        "https://"
+                                        + card.image.image.defaultHost
+                                        + "/i/"
+                                        + card.image.image.endpoint
+                                        + "/"
+                                        + card.image.image.name
+                                    );
+                                }
+                                
+                                widget.amplienceCardImageURLs(listURLs);
+                                
                                 // Retrieve content
                                 widget.content(data.content); 
-                                
-                                // Logging
-                                console.log( "Amplience Content Data: " );
-                                console.log( data.content );
-                                
-                                // Build banner image URL
-                                widget.imageURL(
-                                    "https://" 
-                                    + data.content.img.image.defaultHost 
-                                    + "/i/" 
-                                    + data.content.img.image.endpoint 
-                                    + "/" 
-                                    + data.content.img.image.name);
+
+                                console.log(widget.amplienceCardImageURLs());
                             }
                         )
                 }
