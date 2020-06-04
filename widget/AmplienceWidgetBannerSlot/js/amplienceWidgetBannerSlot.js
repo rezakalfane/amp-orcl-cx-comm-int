@@ -52,7 +52,7 @@ define(
 
                                 // Logging
                                 console.log( "Amplience Content Data: " );
-                                console.log( data.content );
+                                console.log( data.content.content );
                                 
                                 var checkContentSchema = data.content._meta.schema;
                                 console.log(checkContentSchema);
@@ -64,17 +64,17 @@ define(
                                     // Build banner image URL
                                     widget.imageURL(
                                         "https://" 
-                                        + data.content.img.image.defaultHost 
+                                        + data.content.content.img.image.defaultHost 
                                         + "/i/" 
-                                        + data.content.img.image.endpoint 
+                                        + data.content.content.img.image.endpoint 
                                         + "/" 
-                                        + data.content.img.image.name);
+                                        + data.content.content.img.image.name);
                                           
                                         
                                     console.log(widget.imageURL());
 
                                     // Retrieve content
-                                    widget.content(data.content); 
+                                    widget.content(data.content.content); 
                                 }
                                 else
                                 {
