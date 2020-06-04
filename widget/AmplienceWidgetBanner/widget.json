@@ -1,14 +1,16 @@
 {
     "config": {
-      "amplienceContentID": "",
-      "amplienceContentKey": ""
+        "amplienceContentID": "",
+        "amplienceContentKey": ""
     },
     "javascript": "amplienceWidgetBanner",
     "jsEditable": true,
-    "translations": [{
-      "language": "en",
-      "name": "Amplience Widget - Banner"
-    }],
+    "availableToAllPages": true,
+    "translations": [
+        {
+            "language": "en",
+            "name": "Amplience Widget - Banner"
+        }
+    ],
     "version": 1
-  }
-  
+}

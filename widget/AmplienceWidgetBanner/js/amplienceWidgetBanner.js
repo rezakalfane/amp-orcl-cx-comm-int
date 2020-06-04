@@ -16,21 +16,39 @@ define(
         "use strict";
 
         return {
-            contentData: ko.observable( {} ),
-
+            content: ko.observable(),
+            isLoading: ko.observable(true),
+            imageURL: ko.observable(),
+            amplienceBaseURL: null,
+            amplienceContentURL: null,
+            calculateImageURL: function(image) { 
+                return "https://" + image.defaultHost + "/i/" + image.endpoint + "/" + image.name;
+            },
             onLoad: function(widget) {
-                var amplienceContentID = widget.amplienceContentID();
-                var amplienceContentKey = widget.amplienceContentKey();
 
-                var amplienceBaseURL = "https://oraclecx.cdn.content.amplience.net/content/key/web/hero/banner";
-
+                // Site setting
+                widget.amplienceBaseURL = "https://oraclecx.cdn.content.amplience.net/content";
+                widget.amplienceContentURL = widget.amplienceBaseURL + "/key/" + widget.amplienceContentKey();
+                
                 // Load data
-                $.getJSON(amplienceBaseURL) 
-                    .success(function (data) {
-                        self.contentData(data);
-                    });
+                $.getJSON(widget.amplienceContentURL) 
+                    .success(function(data) { 
+                        widget.isLoading(false);
+                        widget.content(data.content); 
+                        widget.imageURL(widget.calculateImageURL(data.content.img.image));
+                });
+            },
+            beforeAppear: function(widget) {
+                
+                // Load data
+                $.getJSON(widget.amplienceContentURL) 
+                    .success(function(data) { 
+                        widget.isLoading(false);
+                        widget.content(data.content); 
+                        widget.imageURL(widget.calculateImageURL(data.content.img.image));
+                });
             }
+           
         }
     }
 );
-                

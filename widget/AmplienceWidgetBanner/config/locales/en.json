@@ -1,9 +1,8 @@
 {
     "resources": {
-      "amplienceContentIDHelpText": "Enter your Amplience Content ID.",
-      "amplienceContentIDTextLabel": "Amplience Content ID",
-      "amplienceContentKeyHelpText": "Enter your Amplience Content Key.",
-      "amplienceContentKeyTextLabel": "Amplience Content Key"
+        "amplienceContentIDHelpText": "Enter your Amplience Content ID.",
+        "amplienceContentIDTextLabel": "Amplience Content ID",
+        "amplienceContentKeyHelpText": "Enter your Amplience Content Key.",
+        "amplienceContentKeyTextLabel": "Amplience Content Key"
     }
-  }
-  
+}
