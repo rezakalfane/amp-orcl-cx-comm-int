@@ -20,7 +20,6 @@ define(
             isLoading: ko.observable(true),
             amplienceCD1BaseURL: null,
             amplienceRenderedURL: null,
-            amplienceStoreName: null,
 
             onLoad: function(widget) {
 
@@ -29,14 +28,11 @@ define(
                                 
                 // Getting Amplience Settings from Site Settings
                 widget.amplienceCD1BaseURL = widget.site().extensionSiteSettings['amplience-site-settings']['amplienceCD1BaseURL'];
-                widget.amplienceStoreName = widget.site().extensionSiteSettings['amplience-site-settings']['amplienceStoreName'];
 
                 // Building the Render URL
                 if ( widget.amplienceContentID() && widget.amplienceTemplateName() )
                     widget.amplienceRenderedURL = 
                         widget.amplienceCD1BaseURL 
-                        + "/" 
-                        + amplienceStoreName
                         + "/content-item/" 
                         + widget.amplienceContentID()
                         + "?template=" 

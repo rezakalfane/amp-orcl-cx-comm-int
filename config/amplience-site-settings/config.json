@@ -14,16 +14,7 @@
             "name": "stringValue",
             "helpTextResourceId": "amplienceCD1BaseURLHelpText",
             "labelResourceId": "amplienceCD1BaseURLLabel",
-            "defaultValue": "https://c1.adis.ws/v1/content",
-            "required": true
-        },
-        {
-            "id": "amplienceStoreName",
-            "type": "stringType",
-            "name": "stringValue",
-            "helpTextResourceId": "amplienceStoreNameHelpText",
-            "labelResourceId": "amplienceStoreNameLabel",
-            "defaultValue": "oraclecx",
+            "defaultValue": "https://c1.adis.ws/v1/content/oraclecx",
             "required": true
         },
         {
