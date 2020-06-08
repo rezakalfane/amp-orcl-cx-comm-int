@@ -10,7 +10,12 @@
                 <div class="amp-ca-card-wrap">
                     <div class="amp-ca-image-holder">
                         <picture class="amp-ca-image">
-                            <img class="amp-ca-image-pic" data-bind="attr: { src: $parent.amplienceCardImageURLs()[$index()], alt: image.imageAltText }">
+                            <img data-bind="attr: { src: 
+                                'https://' + image.image.defaultHost 
+                                + '/i/' 
+                                + image.image.endpoint 
+                                + '/' 
+                                + image.image.name , alt: image.imageAltText }" class="amp-ca-image-pic">
                         </picture>
                     </div>
                     <div class="amp-ca-card-text-wrap">

@@ -6,11 +6,7 @@
         <div class="amp-ca-banner-pic-wrap aos-init aos-animate" data-aos="fade">
             <div class="amp-ca-image-holder">
                 <picture class="amp-ca-image">
-                    <img data-bind="attr: { src: 'https://' + content().img.image.defaultHost 
-                    + '/i/' 
-                    + content().img.image.endpoint 
-                    + '/' 
-                    + content().img.image.name , alt: content().img.imageAltText }" class="amp-ca-image-pic">
+                    <img data-bind="attr: { src: imageURL(), alt: content().img.imageAltText }" class="amp-ca-image-pic">
                 </picture>
             </div>        
         </div>

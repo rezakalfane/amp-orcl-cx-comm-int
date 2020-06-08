@@ -1,0 +1,19 @@
+{
+    "widgetDescriptorName": "Amplience Widget - Banner",
+    "properties": [
+        {
+            "id": "amplienceContentID",
+            "type": "stringType",
+            "name": "Amplience Content ID",
+            "helpTextResourceId": "amplienceContentIDHelpText",
+            "labelResourceId": "amplienceContentIDTextLabel"
+        },
+        {
+            "id": "amplienceTemplateName",
+            "type": "stringType",
+            "name": "Amplience Template Name",
+            "helpTextResourceId": "amplienceTemplateNameHelpText",
+            "labelResourceId": "amplienceTemplateNameTextLabel"
+        }
+    ]
+}

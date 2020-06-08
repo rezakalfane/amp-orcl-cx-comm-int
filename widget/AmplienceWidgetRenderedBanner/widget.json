@@ -1,0 +1,16 @@
+{
+    "config": {
+        "amplienceContentID": "",
+        "amplienceTemplateName": "banner"
+    },
+    "javascript": "amplienceWidgetRenderedBanner",
+    "jsEditable": true,
+    "availableToAllPages": true,
+    "translations": [
+        {
+            "language": "en",
+            "name": "Amplience Widget - Rendered Banner From Handlebars Template"
+        }
+    ],
+    "version": 3
+}

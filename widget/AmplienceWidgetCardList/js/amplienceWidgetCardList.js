@@ -22,7 +22,6 @@ define(
             amplienceCardListClass: ko.observable("amp-ca-card-list amp-ca-prod-3-rows"),
             amplienceBaseURL: null,
             amplienceContentURL: null,
-            amplienceCardImageURLs: ko.observable([]),
 
             onLoad: function(widget) {
 
@@ -61,30 +60,13 @@ define(
                                 console.log(contentSchema);
 
                                 if (checkContentSchema == widget.contentSchema)
-                                {
-                                    var listURLs = [];
-                                    
-                                    // Cycle through cards and building list of image URLs
-                                    for ( var cardRef in data.content.cards )
-                                    {
-                                        var card = data.content.cards[cardRef];
-                                        console.log(card);
-                                        listURLs.push(
-                                            "https://"
-                                            + card.image.image.defaultHost
-                                            + "/i/"
-                                            + card.image.image.endpoint
-                                            + "/"
-                                            + card.image.image.name
-                                        );
-                                    }
-                                    
+                                {                   
                                     // Saving list of image URLs
                                     widget.amplienceCardImageURLs(listURLs);
                                     
                                     // Assigning the right class
-                                    if ( listURLs < 6 )
-                                        widget.amplienceCardListClass("amp-ca-card-list amp-ca-prod-" + listURLs.length + "-rows");
+                                    if ( data.content.cards.length < 6 )
+                                        widget.amplienceCardListClass("amp-ca-card-list amp-ca-prod-" + data.content.cards.length + "-rows");
 
                                     // Retrieve content
                                     widget.content(data.content); 

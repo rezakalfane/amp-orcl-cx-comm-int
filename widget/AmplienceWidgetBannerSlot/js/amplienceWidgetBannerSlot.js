@@ -19,7 +19,6 @@ define(
             contentSchema: "https://www.amplience.com/examples/slots/banner-slot.json",
             content: ko.observable(),
             isLoading: ko.observable(true),
-            imageURL: ko.observable(),
             amplienceBaseURL: null,
             amplienceContentURL: null,
 
@@ -61,19 +60,6 @@ define(
 
                                 if (checkContentSchema == widget.contentSchema)
                                 {
-
-                                    // Build banner image URL
-                                    widget.imageURL(
-                                        "https://" 
-                                        + data.content.content.img.image.defaultHost 
-                                        + "/i/" 
-                                        + data.content.content.img.image.endpoint 
-                                        + "/" 
-                                        + data.content.content.img.image.name);
-                                          
-                                        
-                                    console.log(widget.imageURL());
-
                                     // Retrieve content
                                     widget.content(data.content.content); 
                                 }
