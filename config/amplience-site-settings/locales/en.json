@@ -3,7 +3,7 @@
         "title": "Amplience Global Settings",
         "description": "Amplience Integration with CX Commerce Global Settings",
 
-        "amplienceContentDelivery1TitleHelpText": "Configure Content Delivert Settings.",
+        "amplienceContentDelivery1TitleHelpText": "Configure Content Delivery Settings.",
         "amplienceContentDelivery1TitleLabel": "Content Delivery",
         "amplienceCD1BaseURLHelpText": "Define Content Delivery Base URL.",
         "amplienceCD1BaseURLLabel": "Content Delivery Base URL",
