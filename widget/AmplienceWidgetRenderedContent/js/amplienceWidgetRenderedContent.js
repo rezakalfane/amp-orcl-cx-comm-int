@@ -18,23 +18,23 @@ define(
         return {
             content: ko.observable(),
             isLoading: ko.observable(true),
-            amplienceBaseURL: null,
+            amplienceCD1BaseURL: null,
             amplienceRenderedURL: null,
+            amplienceStoreName: null,
 
             onLoad: function(widget) {
 
                 // Content Div ID
                 var contentDivID = '#' + widget.typeId() + "-" + widget.id() + "-Content";
-                
-                var amplienceStoreName = "oraclecx";
-                
+                                
                 // Getting Amplience Settings from Site Settings
-                widget.amplienceBaseURL = "https://c1.adis.ws/v1/content";
+                widget.amplienceCD1BaseURL = widget.site().extensionSiteSettings['amplience-site-settings']['amplienceCD1BaseURL'];
+                widget.amplienceStoreName = widget.site().extensionSiteSettings['amplience-site-settings']['amplienceStoreName'];
 
                 // Building the Render URL
                 if ( widget.amplienceContentID() && widget.amplienceTemplateName() )
                     widget.amplienceRenderedURL = 
-                        widget.amplienceBaseURL 
+                        widget.amplienceCD1BaseURL 
                         + "/" 
                         + amplienceStoreName
                         + "/content-item/" 
@@ -52,6 +52,7 @@ define(
                     // Load data
                     $.ajax({
                         url: widget.amplienceRenderedURL,
+                        cache:false,
                         context: document.body
                     }).done(function(response) {
                         

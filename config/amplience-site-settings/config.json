@@ -3,13 +3,49 @@
     "descriptionResourceId": "description",
     "properties": [
         {
-            "id": "amplienceBaseURL",
+            "id": "amplienceContentDelivery1Title",
+            "type": "sectionTitleType",
+            "helpTextResourceId": "amplienceContentDelivery1TitleHelpText",
+            "labelResourceId": "amplienceContentDelivery1TitleLabel"
+        },
+        {
+            "id": "amplienceCD1BaseURL",
             "type": "stringType",
             "name": "stringValue",
-            "helpTextResourceId": "amplienceBaseURLHelpText",
-            "labelResourceId": "amplienceBaseURLLabel",
+            "helpTextResourceId": "amplienceCD1BaseURLHelpText",
+            "labelResourceId": "amplienceCD1BaseURLLabel",
+            "defaultValue": "https://c1.adis.ws/v1/content",
+            "required": true
+        },
+        {
+            "id": "amplienceStoreName",
+            "type": "stringType",
+            "name": "stringValue",
+            "helpTextResourceId": "amplienceStoreNameHelpText",
+            "labelResourceId": "amplienceStoreNameLabel",
+            "defaultValue": "oraclecx",
+            "required": true
+        },
+        {
+            "id": "amplienceContentDelivery2Title",
+            "type": "sectionTitleType",
+            "helpTextResourceId": "amplienceContentDelivery2TitleHelpText",
+            "labelResourceId": "amplienceContentDelivery2TitleLabel"
+        },
+        {
+            "id": "amplienceCD1BaseURL",
+            "type": "stringType",
+            "name": "stringValue",
+            "helpTextResourceId": "amplienceCD1BaseURLHelpText",
+            "labelResourceId": "amplienceCD1BaseURLLabel",
             "defaultValue": "https://oraclecx.cdn.content.amplience.net/content",
             "required": true
+        },
+        {
+            "id": "amplienceSchemaDefinitionTitle",
+            "type": "sectionTitleType",
+            "helpTextResourceId": "amplienceSchemaDefinitionHelpText",
+            "labelResourceId": "amplienceSchemaDefinitionLabel"
         },
         {
             "id": "amplienceContentSchemaBanner",

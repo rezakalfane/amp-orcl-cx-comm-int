@@ -1,5 +1,5 @@
 <div data-bind="visible: isLoading()">
-    ...
+    Loading...
 </div>
 <div data-bind="attr: { id: typeId() + '-' + id() + '-Content' }">
 </div>

@@ -2,13 +2,26 @@
     "resources": {
         "title": "Amplience Global Settings",
         "description": "Amplience Integration with CX Commerce Global Settings",
-        "amplienceBaseURLHelpText": "Define Amplience Base URL.",
-        "amplienceBaseURLLabel": "Amplience Base URL",
-        "amplienceContentSchemaBannerHelpText": "Define Amplience JSON Content Schema validation for Banner.",
-        "amplienceContentSchemaBannerLabel": "Amplience Content Schema for Banner",
-        "amplienceContentSchemaBannerSlotHelpText": "Define Amplience JSON Content Schema validation for Banner Slot.",
-        "amplienceContentSchemaBannerSlotLabel": "Amplience Content Schema for Banner Slot",
-        "amplienceContentSchemaCardListHelpText": "Define Amplience JSON Content Schema validation for Card List.",
-        "amplienceContentSchemaCardListLabel": "Amplience Content Schema for Card List"
+
+        "amplienceContentDelivery1TitleHelpText": "Configure Content Delivert Settings.",
+        "amplienceContentDelivery1TitleLabel": "Content Delivery",
+        "amplienceCD1BaseURLHelpText": "Define Content Delivery Base URL.",
+        "amplienceCD1BaseURLLabel": "Content Delivery Base URL",
+        "amplienceStoreNameHelpText": "Define your Store Name.",
+        "amplienceStoreNameLabel": "Store Name",
+
+        "amplienceContentDelivery2TitleHelpText": "Configure Content Delivery v2 Settings.",
+        "amplienceContentDelivery2TitleLabel": "Content Delivery v2",
+        "amplienceCD1BaseURLHelpText": "Define Content Delivery v2 Base URL.",
+        "amplienceCD1BaseURLLabel": "Content Delivery v2 Base URL",
+
+        "amplienceSchemaDefinitionHelpText": "Configure Schema Validation URLs.",
+        "amplienceSchemaDefinitionLabel": "Schema Validation URLs",
+        "amplienceContentSchemaBannerHelpText": "Define JSON Content Schema validation for Banner.",
+        "amplienceContentSchemaBannerLabel": "Content Schema for Banner",
+        "amplienceContentSchemaBannerSlotHelpText": "Define JSON Content Schema validation for Banner Slot.",
+        "amplienceContentSchemaBannerSlotLabel": "Content Schema for Banner Slot",
+        "amplienceContentSchemaCardListHelpText": "Define JSON Content Schema validation for Card List.",
+        "amplienceContentSchemaCardListLabel": "Content Schema for Card List"
     }
 }
