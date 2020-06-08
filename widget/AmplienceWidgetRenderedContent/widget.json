@@ -1,15 +1,15 @@
 {
     "config": {
-        "amplienceContentID": "",
+        "amplienceContentID": "461ae505-488a-4d15-92a8-effa61158943",
         "amplienceTemplateName": "banner"
     },
-    "javascript": "amplienceWidgetRenderedBanner",
+    "javascript": "amplienceWidgetRenderedContent",
     "jsEditable": true,
     "availableToAllPages": true,
     "translations": [
         {
             "language": "en",
-            "name": "Amplience Widget - Rendered Banner From Handlebars Template"
+            "name": "Amplience Widget - Rendered Content From Handlebars Template"
         }
     ],
     "version": 3
