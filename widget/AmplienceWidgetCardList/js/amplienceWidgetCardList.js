@@ -57,21 +57,16 @@ define(
                                 // Checking if content schema is the one expected
                                 var checkContentSchema = data.content._meta.schema;
                                 console.log(checkContentSchema);
-                                console.log(contentSchema);
+                                console.log(widget.contentSchema);
 
                                 if (checkContentSchema == widget.contentSchema)
                                 {                   
-                                    // Saving list of image URLs
-                                    widget.amplienceCardImageURLs(listURLs);
-                                    
                                     // Assigning the right class
                                     if ( data.content.cards.length < 6 )
                                         widget.amplienceCardListClass("amp-ca-card-list amp-ca-prod-" + data.content.cards.length + "-rows");
 
                                     // Retrieve content
                                     widget.content(data.content); 
-
-                                    console.log(widget.amplienceCardImageURLs());
                                 }
                                 else
                                 {
