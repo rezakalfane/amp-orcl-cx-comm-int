@@ -33,11 +33,11 @@
             "labelResourceId": "amplienceContentDelivery2TitleLabel"
         },
         {
-            "id": "amplienceCD1BaseURL",
+            "id": "amplienceCD2BaseURL",
             "type": "stringType",
             "name": "stringValue",
-            "helpTextResourceId": "amplienceCD1BaseURLHelpText",
-            "labelResourceId": "amplienceCD1BaseURLLabel",
+            "helpTextResourceId": "amplienceCD2BaseURLHelpText",
+            "labelResourceId": "amplienceCD2BaseURLLabel",
             "defaultValue": "https://oraclecx.cdn.content.amplience.net/content",
             "required": true
         },

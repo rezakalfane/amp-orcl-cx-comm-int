@@ -12,8 +12,8 @@
 
         "amplienceContentDelivery2TitleHelpText": "Configure Content Delivery v2 Settings.",
         "amplienceContentDelivery2TitleLabel": "Content Delivery v2",
-        "amplienceCD1BaseURLHelpText": "Define Content Delivery v2 Base URL.",
-        "amplienceCD1BaseURLLabel": "Content Delivery v2 Base URL",
+        "amplienceCD2BaseURLHelpText": "Define Content Delivery v2 Base URL.",
+        "amplienceCD2BaseURLLabel": "Content Delivery v2 Base URL",
 
         "amplienceSchemaDefinitionHelpText": "Configure Schema Validation URLs.",
         "amplienceSchemaDefinitionLabel": "Schema Validation URLs",

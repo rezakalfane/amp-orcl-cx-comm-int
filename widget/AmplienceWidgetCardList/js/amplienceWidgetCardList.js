@@ -20,21 +20,21 @@ define(
             content: ko.observable(),
             isLoading: ko.observable(true),
             amplienceCardListClass: ko.observable("amp-ca-card-list amp-ca-prod-3-rows"),
-            amplienceCD1BaseURL: null,
+            amplienceCD2BaseURL: null,
             amplienceContentURL: null,
 
             onLoad: function(widget) {
 
                 // Getting Amplience Settings from Site Settings
-                widget.amplienceCD1BaseURL = widget.site().extensionSiteSettings['amplience-site-settings']['amplienceCD1BaseURL'];
+                widget.amplienceCD2BaseURL = widget.site().extensionSiteSettings['amplience-site-settings']['amplienceCD2BaseURL'];
                 if (widget.site().extensionSiteSettings['amplience-site-settings']['amplienceContentSchemaCardList'])
                     widget.contentSchema = widget.site().extensionSiteSettings['amplience-site-settings']['amplienceContentSchemaCardList'];
 
                 // Building the Content URL
                 if ( widget.amplienceContentKey() )
-                    widget.amplienceContentURL = widget.amplienceCD1BaseURL + "/key/" + widget.amplienceContentKey();
+                    widget.amplienceContentURL = widget.amplienceCD2BaseURL + "/key/" + widget.amplienceContentKey();
                 else if ( widget.amplienceContentID() )
-                    widget.amplienceContentURL = widget.amplienceCD1BaseURL + "/id/" + widget.amplienceContentID();
+                    widget.amplienceContentURL = widget.amplienceCD2BaseURL + "/id/" + widget.amplienceContentID();
 
                 // Logging
                 console.log( "Amplience Content URL: " + widget.amplienceContentURL );
