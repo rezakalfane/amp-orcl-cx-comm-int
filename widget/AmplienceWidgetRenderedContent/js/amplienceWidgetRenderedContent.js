@@ -29,7 +29,7 @@ define(
                 // Getting Amplience Settings from Site Settings
                 widget.amplienceCD1BaseURL = widget.site().extensionSiteSettings['amplience-site-settings']['amplienceCD1BaseURL'];
 
-                // Building the Render URL
+                // Building the Render URL - TODO: handle locale
                 if ( widget.amplienceContentID() && widget.amplienceTemplateName() )
                     widget.amplienceRenderedURL = 
                         widget.amplienceCD1BaseURL 
@@ -48,13 +48,30 @@ define(
                     // Load data
                     $.ajax({
                         url: widget.amplienceRenderedURL,
-                        cache:false,
-                        context: document.body
-                    }).done(function(response) {
-                        
-                        // Set loading to false
-                        widget.isLoading(false);
-                        $(contentDivID).html(response);
+                        cache:false,    // will add a "_" parameter with current timestamp
+                        context: document.body,
+                        success: function(data, textStatus, xhr) {
+
+                            // Return code should be code 200
+                            console.log("Rendering service response: " + xhr.status + " - " + textStatus);
+
+                            // Set loading to false
+                            widget.isLoading(false);
+                            
+                            if ( xhr.status == 200 )
+                            {
+                                // Replace instance DIV with returned HTML
+                                $(contentDivID).html(data);
+                            }
+                        },
+                        error: function(data, textStatus, xhr) {
+                            
+                            // Issue with the template or the rendering engine
+                            console.log("Rendering service response: " + xhr + " - " + textStatus);
+                            
+                            // Set loading to false
+                            widget.isLoading(false);
+                        }
                     });
                 }
                 widget.isLoading(false);
