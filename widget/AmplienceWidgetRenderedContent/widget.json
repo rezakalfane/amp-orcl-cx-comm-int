@@ -1,7 +1,7 @@
 {
     "config": {
-        "amplienceContentID": "2ed6f457-e42c-4fee-964d-190dca9b1de9",
-        "amplienceTemplateName": "cardList"
+        "amplienceContentID": "462981d6-f724-449e-bf82-60c413ed40f8",
+        "amplienceTemplateName": "banner-slot"
     },
     "javascript": "amplienceWidgetRenderedContent",
     "jsEditable": true,
