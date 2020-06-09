@@ -8,18 +8,18 @@
             "helpTextResourceId": "amplienceContentIDHelpText",
             "labelResourceId": "amplienceContentIDTextLabel"
         },
-        {
-            "id": "amplienceTemplateName",
-            "type": "optionType",
-            "name": "optionValue",
-            "required": true,
-            "helpTextResourceId": "amplienceTemplateNameHelpText",
-            "labelResourceId": "amplienceTemplateNameTextLabel",
-            "options": [
+        {
+            "id": "amplienceTemplateName",
+            "type": "optionType",
+            "name": "optionValue",
+            "required": true,
+            "helpTextResourceId": "amplienceTemplateNameHelpText",
+            "labelResourceId": "amplienceTemplateNameTextLabel",
+            "options": [
                 {
-                    "id": "banner-slot",
+                    "id": "banner_slot",
                     "value": "banner-slot",
-                    "labelResourceId": "banner-slotLabel"
+                    "labelResourceId": "banner_slotLabel"
                 },
                 {
                     "id": "banner",
@@ -57,9 +57,9 @@
                     "labelResourceId": "carouselLabel"
                 },
                 {
-                    "id": "container-slot",
+                    "id": "container_slot",
                     "value": "container-slot",
-                    "labelResourceId": "container-slotLabel"
+                    "labelResourceId": "container_slotLabel"
                 },
                 {
                     "id": "container",
@@ -82,9 +82,9 @@
                     "labelResourceId": "externalBlockLabel"
                 },
                 {
-                    "id": "flexible-slot",
+                    "id": "flexible_slot",
                     "value": "flexible-slot",
-                    "labelResourceId": "flexible-slotLabel"
+                    "labelResourceId": "flexible_slotLabel"
                 },
                 {
                     "id": "grid",
@@ -92,19 +92,19 @@
                     "labelResourceId": "gridLabel"
                 },
                 {
-                    "id": "hero-block",
+                    "id": "hero_block",
                     "value": "hero-block",
-                    "labelResourceId": "hero-blockLabel"
+                    "labelResourceId": "hero_blockLabel"
                 },
                 {
-                    "id": "image-block",
+                    "id": "image_block",
                     "value": "image-block",
-                    "labelResourceId": "image-blockLabel"
+                    "labelResourceId": "image_blockLabel"
                 },
                 {
-                    "id": "image-url",
+                    "id": "image_url",
                     "value": "image-url",
-                    "labelResourceId": "image-urlLabel"
+                    "labelResourceId": "image_urlLabel"
                 },
                 {
                     "id": "image",
@@ -117,44 +117,44 @@
                     "labelResourceId": "imagelayerholderLabel"
                 },
                 {
-                    "id": "landmark-image",
+                    "id": "landmark_image",
                     "value": "landmark-image",
-                    "labelResourceId": "landmark-imageLabel"
+                    "labelResourceId": "landmark_imageLabel"
                 },
                 {
-                    "id": "landmark-main-banner-2",
+                    "id": "landmark_main_banner_2",
                     "value": "landmark-main-banner-2",
-                    "labelResourceId": "landmark-main-banner-2Label"
+                    "labelResourceId": "landmark_main_banner_2Label"
                 },
                 {
-                    "id": "landmark-main-banner",
+                    "id": "landmark_main_banner",
                     "value": "landmark-main-banner",
-                    "labelResourceId": "landmark-main-bannerLabel"
+                    "labelResourceId": "landmark_main_bannerLabel"
                 },
                 {
-                    "id": "landmark-offer-html",
+                    "id": "landmark_offer_html",
                     "value": "landmark-offer-html",
-                    "labelResourceId": "landmark-offer-htmlLabel"
+                    "labelResourceId": "landmark_offer_htmlLabel"
                 },
                 {
-                    "id": "landmark-offer",
+                    "id": "landmark_offer",
                     "value": "landmark-offer",
-                    "labelResourceId": "landmark-offerLabel"
+                    "labelResourceId": "landmark_offerLabel"
                 },
                 {
-                    "id": "landmark-product-category-carousel",
+                    "id": "landmark_product_category_carousel",
                     "value": "landmark-product-category-carousel",
-                    "labelResourceId": "landmark-product-category-carouselLabel"
+                    "labelResourceId": "landmark_product_category_carouselLabel"
                 },
                 {
-                    "id": "landmark-product",
+                    "id": "landmark_product",
                     "value": "landmark-product",
-                    "labelResourceId": "landmark-productLabel"
+                    "labelResourceId": "landmark_productLabel"
                 },
                 {
-                    "id": "localised-banner-slot",
+                    "id": "localised_banner_slot",
                     "value": "localised-banner-slot",
-                    "labelResourceId": "localised-banner-slotLabel"
+                    "labelResourceId": "localised_banner_slotLabel"
                 },
                 {
                     "id": "page",
@@ -162,14 +162,14 @@
                     "labelResourceId": "pageLabel"
                 },
                 {
-                    "id": "personalised-banner-slot",
+                    "id": "personalised_banner_slot",
                     "value": "personalised-banner-slot",
-                    "labelResourceId": "personalised-banner-slotLabel"
+                    "labelResourceId": "personalised_banner_slotLabel"
                 },
                 {
-                    "id": "product-category-slot",
+                    "id": "product_category_slot",
                     "value": "product-category-slot",
-                    "labelResourceId": "product-category-slotLabel"
+                    "labelResourceId": "product_category_slotLabel"
                 },
                 {
                     "id": "product",
@@ -192,9 +192,9 @@
                     "labelResourceId": "promotionLabel"
                 },
                 {
-                    "id": "split-block",
+                    "id": "split_block",
                     "value": "split-block",
-                    "labelResourceId": "split-blockLabel"
+                    "labelResourceId": "split_blockLabel"
                 },
                 {
                     "id": "splitBlock",
@@ -207,9 +207,9 @@
                     "labelResourceId": "stackLabel"
                 },
                 {
-                    "id": "text-block",
+                    "id": "text_block",
                     "value": "text-block",
-                    "labelResourceId": "text-blockLabel"
+                    "labelResourceId": "text_blockLabel"
                 },
                 {
                     "id": "text",
@@ -226,7 +226,7 @@
                     "value": "video",
                     "labelResourceId": "videoLabel"
                 }
-            ]
-        }            
+            ]
+        }
     ]
 }
