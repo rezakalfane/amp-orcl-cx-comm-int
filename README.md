@@ -6,3 +6,4 @@ Oracle CX Commerce Extension exposing various Amplience Content Items in the Sto
 - Amplience Banner Widget
 - Amplience Banner Slot Widget
 - Amplience Card List Widget
+- Amplience Rendered Content Widget
