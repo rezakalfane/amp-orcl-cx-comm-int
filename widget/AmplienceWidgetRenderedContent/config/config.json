@@ -1,5 +1,5 @@
 {
-    "widgetDescriptorName": "Amplience Widget - Banner",
+    "widgetDescriptorName": "Amplience Widget - Rendered Content with Handlebars Template",
     "properties": [
         {
             "id": "amplienceContentID",
@@ -8,12 +8,225 @@
             "helpTextResourceId": "amplienceContentIDHelpText",
             "labelResourceId": "amplienceContentIDTextLabel"
         },
-        {
-            "id": "amplienceTemplateName",
-            "type": "stringType",
-            "name": "Amplience Template Name",
-            "helpTextResourceId": "amplienceTemplateNameHelpText",
-            "labelResourceId": "amplienceTemplateNameTextLabel"
-        }
+        {
+            "id": "amplienceTemplateName",
+            "type": "optionType",
+            "name": "optionValue",
+            "required": true,
+            "helpTextResourceId": "amplienceTemplateNameHelpText",
+            "labelResourceId": "amplienceTemplateNameTextLabel",
+            "options": [
+                {
+                    "id": "banner-slot",
+                    "value": "banner-slot",
+                    "labelResourceId": "banner-slotLabel"
+                },
+                {
+                    "id": "banner",
+                    "value": "banner",
+                    "labelResourceId": "bannerLabel"
+                },
+                {
+                    "id": "blog",
+                    "value": "blog",
+                    "labelResourceId": "blogLabel"
+                },
+                {
+                    "id": "blogList",
+                    "value": "blogList",
+                    "labelResourceId": "blogListLabel"
+                },
+                {
+                    "id": "blogSnippet",
+                    "value": "blogSnippet",
+                    "labelResourceId": "blogSnippetLabel"
+                },
+                {
+                    "id": "card",
+                    "value": "card",
+                    "labelResourceId": "cardLabel"
+                },
+                {
+                    "id": "cardList",
+                    "value": "cardList",
+                    "labelResourceId": "cardListLabel"
+                },
+                {
+                    "id": "carousel",
+                    "value": "carousel",
+                    "labelResourceId": "carouselLabel"
+                },
+                {
+                    "id": "container-slot",
+                    "value": "container-slot",
+                    "labelResourceId": "container-slotLabel"
+                },
+                {
+                    "id": "container",
+                    "value": "container",
+                    "labelResourceId": "containerLabel"
+                },
+                {
+                    "id": "editorial",
+                    "value": "editorial",
+                    "labelResourceId": "editorialLabel"
+                },
+                {
+                    "id": "emailbanner",
+                    "value": "emailbanner",
+                    "labelResourceId": "emailbannerLabel"
+                },
+                {
+                    "id": "externalBlock",
+                    "value": "externalBlock",
+                    "labelResourceId": "externalBlockLabel"
+                },
+                {
+                    "id": "flexible-slot",
+                    "value": "flexible-slot",
+                    "labelResourceId": "flexible-slotLabel"
+                },
+                {
+                    "id": "grid",
+                    "value": "grid",
+                    "labelResourceId": "gridLabel"
+                },
+                {
+                    "id": "hero-block",
+                    "value": "hero-block",
+                    "labelResourceId": "hero-blockLabel"
+                },
+                {
+                    "id": "image-block",
+                    "value": "image-block",
+                    "labelResourceId": "image-blockLabel"
+                },
+                {
+                    "id": "image-url",
+                    "value": "image-url",
+                    "labelResourceId": "image-urlLabel"
+                },
+                {
+                    "id": "image",
+                    "value": "image",
+                    "labelResourceId": "imageLabel"
+                },
+                {
+                    "id": "imagelayerholder",
+                    "value": "imagelayerholder",
+                    "labelResourceId": "imagelayerholderLabel"
+                },
+                {
+                    "id": "landmark-image",
+                    "value": "landmark-image",
+                    "labelResourceId": "landmark-imageLabel"
+                },
+                {
+                    "id": "landmark-main-banner-2",
+                    "value": "landmark-main-banner-2",
+                    "labelResourceId": "landmark-main-banner-2Label"
+                },
+                {
+                    "id": "landmark-main-banner",
+                    "value": "landmark-main-banner",
+                    "labelResourceId": "landmark-main-bannerLabel"
+                },
+                {
+                    "id": "landmark-offer-html",
+                    "value": "landmark-offer-html",
+                    "labelResourceId": "landmark-offer-htmlLabel"
+                },
+                {
+                    "id": "landmark-offer",
+                    "value": "landmark-offer",
+                    "labelResourceId": "landmark-offerLabel"
+                },
+                {
+                    "id": "landmark-product-category-carousel",
+                    "value": "landmark-product-category-carousel",
+                    "labelResourceId": "landmark-product-category-carouselLabel"
+                },
+                {
+                    "id": "landmark-product",
+                    "value": "landmark-product",
+                    "labelResourceId": "landmark-productLabel"
+                },
+                {
+                    "id": "localised-banner-slot",
+                    "value": "localised-banner-slot",
+                    "labelResourceId": "localised-banner-slotLabel"
+                },
+                {
+                    "id": "page",
+                    "value": "page",
+                    "labelResourceId": "pageLabel"
+                },
+                {
+                    "id": "personalised-banner-slot",
+                    "value": "personalised-banner-slot",
+                    "labelResourceId": "personalised-banner-slotLabel"
+                },
+                {
+                    "id": "product-category-slot",
+                    "value": "product-category-slot",
+                    "labelResourceId": "product-category-slotLabel"
+                },
+                {
+                    "id": "product",
+                    "value": "product",
+                    "labelResourceId": "productLabel"
+                },
+                {
+                    "id": "promo",
+                    "value": "promo",
+                    "labelResourceId": "promoLabel"
+                },
+                {
+                    "id": "promoList",
+                    "value": "promoList",
+                    "labelResourceId": "promoListLabel"
+                },
+                {
+                    "id": "promotion",
+                    "value": "promotion",
+                    "labelResourceId": "promotionLabel"
+                },
+                {
+                    "id": "split-block",
+                    "value": "split-block",
+                    "labelResourceId": "split-blockLabel"
+                },
+                {
+                    "id": "splitBlock",
+                    "value": "splitBlock",
+                    "labelResourceId": "splitBlockLabel"
+                },
+                {
+                    "id": "stack",
+                    "value": "stack",
+                    "labelResourceId": "stackLabel"
+                },
+                {
+                    "id": "text-block",
+                    "value": "text-block",
+                    "labelResourceId": "text-blockLabel"
+                },
+                {
+                    "id": "text",
+                    "value": "text",
+                    "labelResourceId": "textLabel"
+                },
+                {
+                    "id": "ugc",
+                    "value": "ugc",
+                    "labelResourceId": "ugcLabel"
+                },
+                {
+                    "id": "video",
+                    "value": "video",
+                    "labelResourceId": "videoLabel"
+                }
+            ]
+        }            
     ]
 }

@@ -43,7 +43,7 @@ define(
                 if ( widget.amplienceContentURL )
                 {
                     // Load data
-                    $.getJSON(widget.amplienceContentURL, {"depth": "all", "format": "inlined"}) 
+                    $.getJSON(widget.amplienceContentURL, {"depth": "all", "format": "inlined", "locale":  widget.locale() + ",*"}) 
                         .success(
                             function(data) { 
                                 
