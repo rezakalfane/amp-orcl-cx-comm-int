@@ -49,29 +49,28 @@ define(
                     $.ajax({
                         url: widget.amplienceRenderedURL,
                         cache:false,    // will add a "_" parameter with current timestamp
-                        context: document.body,
-                        success: function(data, textStatus, xhr) {
+                        context: document.body})
+                    .done(function(data, textStatus, xhr) {
 
-                            // Return code should be code 200
-                            console.log("Rendering service response: " + xhr.status + " - " + textStatus);
+                        // Return code should be code 200
+                        console.log("Rendering service response: " + xhr.status + " - " + textStatus);
 
-                            // Set loading to false
-                            widget.isLoading(false);
-                            
-                            if ( xhr.status == 200 )
-                            {
-                                // Replace instance DIV with returned HTML
-                                $(contentDivID).html(data);
-                            }
-                        },
-                        error: function(data, textStatus, xhr) {
-                            
-                            // Issue with the template or the rendering engine
-                            console.log("Rendering service response: " + xhr + " - " + textStatus);
-                            
-                            // Set loading to false
-                            widget.isLoading(false);
+                        // Set loading to false
+                        widget.isLoading(false);
+                        
+                        if ( xhr.status == 200 )
+                        {
+                            // Replace instance DIV with returned HTML
+                            $(contentDivID).html(data);
                         }
+                    })
+                    .fail(function(data, textStatus, xhr) {
+                        
+                        // Issue with the template or the rendering engine
+                        console.log("Rendering service response: " + xhr + " - " + textStatus);
+                        
+                        // Set loading to false
+                        widget.isLoading(false);
                     });
                 }
                 widget.isLoading(false);
