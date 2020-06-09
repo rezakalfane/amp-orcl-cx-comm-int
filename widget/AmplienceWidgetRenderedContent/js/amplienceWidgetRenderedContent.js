@@ -37,7 +37,9 @@ define(
                         + widget.amplienceContentID()
                         + "?template=" 
                         + widget.amplienceTemplateName()
-                        + "&locale=en-GB,en*,*";
+                        + "&locale="
+                        + widget.locale()
+                        + ",*";
 
                 // Logging
                 console.log( "Amplience Rendered URL: " + widget.amplienceRenderedURL );
