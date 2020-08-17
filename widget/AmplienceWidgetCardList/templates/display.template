@@ -3,7 +3,7 @@
         ...
     </div>
     <!-- ko if: content() -->
-        <div class="amp-ca-card-title">
+        <div class="amp-ca-card-title" data-bind="text: content().header">
         </div>
         <div class="amp-ca-card-list-wrap" data-bind="foreach: content().cards">
             <div class="amp-ca-card">
